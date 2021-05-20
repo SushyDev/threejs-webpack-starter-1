@@ -1,20 +1,47 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
 
-html,
-body
-{
-    height: 100vh;
-    font-family: 'Poppins';
+@font-face {
+    font-family: Poppins;
+    src: url('../static/fonts/Poppins/Poppins-Regular.ttf');
 }
 
-.webgl
-{
+html,
+body {
+    height: 100vh;
+    font-family: 'Poppins';
+    background: black;
+}
+
+.webgl {
     position: fixed;
     top: 0;
     left: 0;
     outline: none;
+}
+
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background: #00000080;
+    color: white;
+}
+.overlay p {
+    padding: 0.1 0;
+}
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: fixed;
+    background: green;
+    border: 2px solid white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
